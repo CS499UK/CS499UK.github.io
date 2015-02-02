@@ -8,9 +8,9 @@
   <meta name="MobileOptimized">
   <title>CS499 Visually Impaired</title>
   	<!-- <link href="../bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet"> -->
-	<link href="../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    	<link href="../css/main.css" rel="stylesheet">
+	<link href="../../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    	<link href="../../css/main.css" rel="stylesheet">
 	<!-- end .features --> 
     
     <script type="text/javascript">
@@ -57,28 +57,37 @@
 	<div class="largeSpacer"></div>
 	<div class="container">
 		
-		<div class="panel-group" role="tablist">
-    			<div class="panel panel-default">
-      			<div class="panel-heading" role="tab" id="collapseListGroupHeading1">
-        				<h4 class="panel-title">
-          			<a class="collapsed" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
-            Meeting Notes
-         				</a>
-        				</h4>
-      			</div>
-      			<div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
-        				<ul class="list-group">
-						<li class="list-group-item"><a href="/activity/Meetings/meeting1.html">Meeting 1</a></li>
-          				<!--<li class="list-group-item"></li> -->
-        				</ul>
-      			</div>
-    			</div>
-  		</div>
+		<i>Feb 2, 2015</i><p></p>
+		Potrace - piece of software that tries to derive vector representation of arbitrary image
+		<p></p>
+		<p><b>Basic Idea:</b></p>
+		-Android app that reads an image and with moving your finger along the image noises/vibrations occur based on images</br>
+		-Intended to be used primarily for reading diagrams and graphs.<br>
+		-Capable of reading short messages, and figures and outputting unique noises/vibrations
+		<p></p>
+		<p><b>Key Ideas:</b></p>
+		-Say you have an image too complicated for a blind person (like a technical diagram in EE380)<br>
+		-Be able to read an image<br>
+		-Use frequency of a note to indicate color<br>
+		-When you hit an edge make a little click sound<br>
+		-When there’s text in an image, run an OCR algorithm to read out text<br>
+		-Being able to read the labeling in an axis since there’s no box<br>
+		-If there’s something that looks like text but not in a boxed object, be able to make some kind of assumption in order to read the text<br>
+		-If there’s text near some line but not in a box, play sounds at certain scenario<br>
+		-You want everything to not require any network connections. All OCR should be local.
+		<p></p>
+	
+		<p><b>Hardware/Software Specifications</b></p>
+		-Able to work on a cheap $40 android tablet (7 inches)
+		<br>-Any brand will work.
+		<br>-dual core / quad core
+		<br>-Try to avoid requiring certain OS versions if possible
+
 		
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- <script src="../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script> -->
-	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="../../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 	</div>
 </body>
 </html>
