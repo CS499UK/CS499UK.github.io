@@ -57,17 +57,35 @@
 	<div class="largeSpacer"></div>
 	<div class="container">
 	
-		<b>Basic Idea:</b><p></p>
-		-Android app that reads an image and with moving your finger along the image noises/vibrations occur based on images<br>
-		-Intended to be used primarily for reading diagrams and graphs.<br>
-		-Capable of reading short messages, and figures and outputting unique noises/vibrations. <br>
-		<p></p>
-		<b>HardWare / Software Specifications:</b><p></p>
-		-Able to work on a cheap $40 android tablet (7 inches) <br>
-		-Any brand will work. <br>
-		-dual core / quad core <br>
-		-Try to avoid requiring certain OS versions if possible <br>
+		<h2>Requirements</h2>
+		<ul>
+			We will be using Android Studio to create an Android app that allows visually impaired people to understand diagrams through the use of sounds and vibrations. To achieve this task, we will be following the specifications below.
+		</ul>
 		
+		<h3>HardWare / Software Specifications:</h3>
+		<ul>
+			<li>App is capable of running on the cheapest 7 inch modern tablets that exist.</li>
+			<li>Tablets used will be dual core / quad core.</li>
+			<li>A maximum of 1GB of RAM will be available in the tablets that are used.</li>
+			<li>Android 4.4 (Kitkat) will be the operating system used for testing.</li>
+		</ul>
+		
+		<h3>Color Reading</h3>
+		<ul>
+			<li>When reading diagrams, the application will read the pixel values based on where the user touches the tablet. Different sounds will occur when touching a specific color, or moving to a new color on the diagram.</li>
+			<li>When the user runs into the pixel value for black, a unique sound and vibration will occur. This will notify the user that they have hit the color black and have likely touched a border.</li>
+		</ul>
+		
+		<h3>OCR</h3>
+		<ul>
+			<li>Upon touching the color black, an OCR algorithm will be ran to check if there exists text inside of a border. If text is found then the letters will be read out to the user.</li>
+		</ul>
+		
+		<h3>Reading Images</h3>
+		<ul>
+			<li>The application will accept PDF images. In the future we will integrate more features that allow the user to read other formats.</li>
+		</ul>
+		<!--
 		<h2>Iteration 1</h2>
         <h4>Goals</h4>
         <ul>
@@ -83,7 +101,7 @@
             <li>Hard code sound confirmation if finger touches boundary line of object</li>
             <li>Hard code voice confirmation of object finger is in/on</li>
         </ul>
-        
+        -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- <script src="../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script> -->
 	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
