@@ -59,7 +59,72 @@
 	<div class="largeSpacer"></div>
 	<div class="container">
 	
-		<h2>Project Design</h2>
+		<div align="center"><h2>Project Design</h2></div>
+		<h3>Overview</h3>
+		For decades, Braille,  a tactile writing system, has been the only option for the blind and the visually impaired people. Although a very useful system, it is not a universal solution for all circumstances faced by visually impaired individuals. The Diagramaphone will allow Android smartphones, and tablets to “read” diagrams, and graphs. To accomplish this the Android app will recognize shapes, characters, pixels, etc. and will be able to output to the user unique sounds and vibrations.
+		
+		
+		<h3>Environment</h3>
+		The Android app is designed to work under the following operating systems.
+		<ul>
+			<li>Android 4.2 JellyBean</li>
+			<li>Android 4.4 KitKat</li>
+		</ul>
+		
+		Preferred hardware requirements are as follows.
+		<ul>
+			<li>1 GB of RAM</li>
+			<li>7" Tablet (any brand)</li>
+			<li>Dual Core / Quad Core</li>
+		</ul>
+		
+		Testing will be done with the following devices.
+		<ul>
+			<li>Dragon Touch 7" Tablets</li>
+			<li>Android Studio WSVG Emulator</li>
+		</ul>
+		
+		<h3>Module Description & Data Flow</h3>
+		
+		<h3>User Scenarios</h3>
+		<ol>
+			<!--1 -->
+			<li>App is initially opened.</li>
+			<ol type="a">
+				<li>A menu that lets the user access the tablet's picture gallery is displayed.</li>
+			</ol>
+			<br>
+			<!--2 -->
+			<li>Photo in photo gallery gets chosen by the user.</li>
+			<ol type="a">
+				<li>Photo is read in by the Diagramaphone.</li>
+				<li>The image gets scanned by the OCR algorithm. The algorithm will check for any text in the photo.</li>
+				<li>Edges get deteced in the image to determine unique shapes. </li>
+			</ol>
+			<!--3 -->
+			<br>
+			<li>The user moves their finger along the tablet's screen.</li>
+			<ol type="a">
+				<li>If the user runs their finger along the text, the tablet will read out loud the text to the user.</li>
+				<li>If the user runs their finger along a border, a unique beeping and vibration noise is made.</li>
+				<li>The app will make unique sounds for different shapes that the user moves their finger along.</li>
+				<ol type="i">
+					<li>The app will say "unknown" for any shapes that it cannot determine.</li>
+				</ol>
+			</ol>
+		</ol>
+		
+	
+		<h3>Design Considerations</h3>
+		<ul>
+			<li>The app is designed with accessibility in mind. Certain features, which may seem to be ineffective for someone without a disability, are intentionally made for the ease of access to someone who is visually impaired.</li>
+			<li>Tess-Two (vs other OCR's available)</li>
+			<ul>
+				<li>In our design, we decided to use the Tess-Two library for our OCR. The primary motivation for using Tess-Two instead of other OCR software is its Android functionality. Tess-Two was made to be a set of Android API’s for the Google Tesseract OCR. </li>
+			</ul>
+		</ul>
+		
+		<h3>Sizing Estimate</h3>
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- <script src="../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script> -->
