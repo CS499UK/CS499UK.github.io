@@ -84,7 +84,11 @@
 			<li>Android Studio WSVG Emulator</li>
 		</ul>
 		
+		<!--User Modules -->
 		<h3>Module Description & Data Flow</h3>
+		<center><img class="img-responsive" src="/CS499UK.github.io/images/design1.PNG"/></center>
+		<br>
+		<center><img class="img-responsive" src="/CS499UK.github.io/images/design2.PNG"/></center>
 		
 		<h3>User Scenarios</h3>
 		<ol>
@@ -124,7 +128,15 @@
 			</ul>
 		</ul>
 		
-		<h3>Sizing Estimate</h3>
+		<h3>(Rough) Sizing Estimate</h3>
+		The code in the app can be split up into several categories: OCR, GUI, and image reading. Rough estimates for the two categories are as follows.
+		<h4>OCR Code</h4>
+		A good portion of the code needed for implementing our OCR is already provided through the Tess-Two library. The main difficulties for this portion of the program consists of implementing the OCR with the rest of the program, and having it successfully read text. Without considering the code already provided, we can expect around 500 lines of code needed to get the OCR working properly with everything else.
+		<h4>GUI</h4>
+		Our GUI will be made with accessibility in mind. We expect roughly 750 lines of code needed to create our GUI from scratch.
+		<h4>Image Reading</h4>
+		Image reading will consist of analyzing shapes, and determining edges in an image. To accomplish this we will be incorporating some previously existing code from the Marvin Framework. Without including the code in the framework, rough estimates include approximately 750 lines of code.
+		
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- <script src="../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script> -->
