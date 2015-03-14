@@ -90,6 +90,63 @@
 		<br>
 		<center><img class="img-responsive" src="/images/design2.PNG"/></center>
 		
+		<h4>Psuedo Code<h4>
+		
+		<pre>func MainActivity()
+
+	for all images i in Default Directory
+		display i as Thumbnail
+	
+	while user input not received
+	{
+		if Thumbnail is Selected
+			ListofBlockLocations, MapOfTextLocations = ProcessImage(UserSelectedImage )
+			DisplayOnScreen (UserSelectedImage, ListOfBlockLocations, MapOfTextLocations )
+		if next page is available and selected
+			display next page
+		if previous page is available and selected
+			display previous page
+		if user exits
+			exit
+	}
+
+	
+func ProcessImage ( UserSelectedImage )	
+	
+	ProcessedImage = EdgeDetection(UserSelectedImage)
+
+	ListOfBlockLocations = Get blocks from ProcessedImage
+	
+	for all blocks  b in ListOfBlockLocations:
+		Get the associated text for b
+		Store the location and a string of the text in MapOfTextLocations
+	
+	return ListofBlockLocations, MapOfTextLocations
+
+	
+func DisplayOnScreen (UserSelectedImage, ListOfBlockLocations, MapOfTextLocations )
+
+display( UserSelectedImage )
+
+	while true
+
+		if touch input from user
+	
+			Location = get the (x,y) coordinate of pixel touched
+		
+			if Location is in MapOfTextLocations
+				TextToSpeech( MapOfTextLocations[Location] )
+			
+			if Location is in ListOfBlockLocations
+				play audio cue 
+
+	if user selects load new image
+		return
+
+	if user exits
+		exit
+		</pre>
+		
 		<h3>User Scenarios</h3>
 		<ol>
 			<!--1 -->
