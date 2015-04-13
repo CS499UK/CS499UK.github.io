@@ -62,7 +62,7 @@
 	
 		<h2>Requirements</h2>
 		<ul>
-			We will be using Android Studio to create an Android app that allows visually impaired people to understand diagrams through the use of sounds and vibrations. To achieve this task, we will be following the specifications below.
+			We will be using Android Studio (1.0.1) to create an Android app that allows visually impaired people to understand diagrams through the use of sounds and vibrations. To achieve this task, we will be following the specifications below.
 		</ul>
 		
 		<h3>HardWare / Software Specifications:</h3>
@@ -73,20 +73,23 @@
 			<li>Android 4.4 (Kitkat) will be the operating system used for testing.</li>
 		</ul>
 		
-		<h3>Color Reading</h3>
+		<h3>Shape Detection</h3>
 		<ul>
-			<li>When reading diagrams, the application will read the pixel values based on where the user touches the tablet. Different sounds will occur when touching a specific color, or moving to a new color on the diagram.</li>
-			<li>When the user runs into the pixel value for black, a unique sound and vibration will occur. This will notify the user that they have hit the color black and have likely touched a border.</li>
+			<li>When reading diagrams, the application will detect any rectangles in the diagram whenever the user moves their finger to its location. Different sounds will occur when touching a specific rectangle on the diagram.</li>
+			<li>All other shapes that the diagram may have are currently not being considered. Detecting other shapes will be implemented if time permits.</li>
 		</ul>
 		
 		<h3>OCR</h3>
 		<ul>
-			<li>Upon touching the color black, an OCR algorithm will be ran to check if there exists text inside of a border. If text is found then the letters will be read out to the user.</li>
+			<li>Upon touching the tablet, an OCR will be ran to check if there exists text inside of a rectangle border. If text is found then the letters will be read out to the user.</li>
+			<li>When the OCR notices text, a beeping noise will be made that will notify the user that the OCR has found text. This lets the user know that they need to stop moving their finger so that the OCR can read the text.</li>
 		</ul>
 		
 		<h3>Reading Images</h3>
 		<ul>
-			<li>The application will accept PDF images. In the future we will integrate more features that allow the user to read other formats.</li>
+			<li>The application will accept images from Android's gallery.</li>
+			<li>The app allows users to load in images directly from the gallery.</li>
+			
 		</ul>
 		<!--
 		<h2>Iteration 1</h2>
